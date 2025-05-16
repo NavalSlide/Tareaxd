@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacaciones de Saúl Véliz</title>
+</head>
+<body>
+<style>
+    body{
+        background-color: black;
+        color: white;
+        font-family: Candara, sans-serif;
+    }
+ 
+    h1{
+        text-align: center;
+        font-size:80px;
+        background: linear-gradient(to right, #8b0000, rgb(199, 21, 133), #800080, #4b0082);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .invisible{
+        display: none;
+        
+    }
+    .invisible1{
+        display: none;}
+        .invisible2{
+        display: none;}
+        .invisible3{
+        display: none;}
+    .introduccion{
+        border: 6px solid rgb(199, 21, 133);
+        border-radius: 50px;
+        width: 800px;
+        padding: 15px;
+        margin: 0 auto;
+    }
+    h2{
+        font-size: 50px;
+        margin: 0 auto;
+        background: linear-gradient(to right, #8b0000, rgb(199, 21, 133), #800080, #4b0082);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+    }
+    html {
+  scroll-behavior: smooth;
+  
+}
+
+
+.fases{
+    display: flex;
+}
+ button{
+     background: linear-gradient(to right, #8b0000, rgb(199, 21, 133), #800080, #4b0082);
+     display: block; margin: 0 auto;
+     width: 300px;
+     height: 125px;
+     font-size:40px;
+     color: white;
+     border-radius: 40px;
+
+ }
+</style>
+    
+    <div style="border-bottom: 10px solid purple;">
+    <h1>Mis vacaciones</h1>
+
+
+    <div class="introduccion">
+        <center><H2>Introduccion</H2>
+        <p onclick="aparecer()">Click aquí ▼</p>
+        <div class="invisible" id="invisible"><p style="font-size:25px">Mis vacaciones de interesantes tuvieron poco, pues rara vez hice algo fuera de lo cotidiano con algunas excepciones.</p>
+        <img  width=700px height=400px src="../assets/images/persona1/first.png" style="border-radius:20px ;"></div></center>
+    </div><br><br><br></div>
+
+<br> <p style="background: linear-gradient(135deg, #3a0ca3, #7209b7, #b5179e, #f72585);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center; font-size: 70px;"><strong>Desarrollo</strong></p>
+<br>
+    <div class="fases"><div style="margin-right: 30px;width: auto;border:5px solid rgb(98, 7, 158); border-radius: 40px;padding:10px">
+        <H2>Fase 1</H2>
+        <img width=450px   height=700px src="../assets/images/persona1/second.jpg" onclick="aparecer1()" style="border-radius:20px; padding: 10px;"> 
+         <p class="invisible1 " id="invisible1" style="font-size:25px; width: 450px; text-align: center;">Al salir de vacaciones yo solo pensaba en jugar videojuegos, lo que rapidamente se convirtio en algo que me empezo a 
+            aburrir, por lo tanto empecé a cambiar eso</p>
+    </div>
+
+    <div style="margin-left: 30px;margin-right: 30px;width: auto; border:5px solid rgb(98, 7, 158); border-radius: 40px;padding:10px;margin: 0 auto;">
+        <H2>Fase 2</H2>
+        <img width=450px height=700px src="../assets/images/persona1/images.jpg" onclick="aparecer2()" style="border-radius:20px; padding: 10px;"> 
+         <p class="invisible2" id="invisible2" style="font-size:25px;width: 450px; text-align: center;">Luego, me aburrí de solo jugar y tambien ayudaba en la casa o a mi papa con su trabajo aunque seguia jugando de vez en cuando
+             </p>
+    </div>
+    
+  <div style="margin-left: 30px;margin-right: 30px; width: auto; border:5px solid rgb(98, 7, 158); border-radius: 40px;padding:10px">
+        <H2>Fase 3</H2>
+        <img width=450px height=700px src="../assets/images/persona1/third.jpg" onclick="aparecer3()" style="border-radius:20px;padding: 10px;"> 
+         <p class="invisible3" id="invisible3" style="font-size:25px;width: 450px; text-align: center;">Al final tambien salia de casa para hacer otra cosa que no sean mandados, en contadas ocasiones, salí para acompañar a 
+            mi papa en algun viaje cercano por trabajo o por visitar a algun familiar.</p>
+    </div>
+        
+
+    </div>
+  <br><br><br><button onclick="history.back()">Regresar</button> 
+<script>
+    function aparecer (){
+        var contenido= document.getElementById("invisible");
+        if(contenido.style.display==="none"){
+            contenido.style.display="block";
+        } else{ 
+            contenido.style.display="none";
+        }
+    }
+    function aparecer1 (){
+        var contenido= document.getElementById("invisible1");
+        if(contenido.style.display==="none"){
+            contenido.style.display="block";
+        } else{ 
+            contenido.style.display="none";
+        }
+    }
+     function aparecer2 (){
+        var contenido= document.getElementById("invisible2");
+        if(contenido.style.display==="none"){
+            contenido.style.display="block";
+        } else{ 
+            contenido.style.display="none";
+        }
+    }
+     function aparecer3 (){
+        var contenido= document.getElementById("invisible3");
+        if(contenido.style.display==="none"){
+            contenido.style.display="block";
+        } else{ 
+            contenido.style.display="none";
+        }
+    }
+    
+</script>
+  
+
+</body>
+</html>

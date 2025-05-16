@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/persona2.css">
+    <title>Las vacaciones de Justin Ocaña</title>
+</head>
+<body>
+        <button class="menu-btn" aria-label="Abrir menú de navegación" onclick="toggleSidebar()">
+        <div class="menu-btn-container">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </button>
+
+    <nav id="mySidebar" class="sidebar" aria-hidden="true">
+        <div class="sidebar-header">
+            Menú
+            <button class="closebtn" aria-label="Cerrar menú" onclick="toggleSidebar()">×</button>
+        </div>
+        <a href="../index.html" id="inicio" class="active">Inicio</a>
+        <a href="../pages/persona1.html" id="persona1">Persona 1</a>
+        <a href="../pages/persona2.html" id="persona2">Justin Ocaña</a>
+        <a href="../pages/persona3.html" id="persona3">Isabel</a>
+        <a href="404.html" id="persona4">Fabio</a>
+        <a href="404.html" id="about">Sobre Nosotros</a>
+    </nav>
+
+    <header>
+        <h1>Las vacaciones de Justin Ocaña</h1>
+        <h2>Una experiencia interesante</h2>
+    </header>
+
+    <main class="container">
+        <section class="descripcion">
+            <p>
+                Durante mis vacaciones no salí de casa, pero aproveché el tiempo de forma productiva.
+                Me dediqué al desarrollo de un sistema POS (punto de venta), lo cual me permitió mejorar
+                mis habilidades en programación. Además, comencé a aprender Django, un framework de 
+                desarrollo web muy útil. También tuve tiempo para jugar y disfrutar de algunos videojuegos,
+                en resumen mis vacaciones son el siguiente gif:
+            </p>
+        </section>
+
+        <img src="../assets//images/persona2/Pc.gif" alt="Imagen principal de vacaciones" class="imagen-principal">
+
+        <h2>Principales actividades que hice:</h2>
+
+        <section class="actividades">
+            <article class="actividad">
+                <div class="actividad-imagen-container">
+                    <img src="/assets/images/persona2/img1.png" alt="SistemPos" class="actividad-imagen" onclick="mostrarImagen(this)">
+                </div>
+                <div class="actividad-info">
+                    <h3>Creacion de SOUTHERN POS</h3>
+                    <p>
+                        SOUTHERN POS es un sistema de punto de venta (POS) que desarrollé durante mis vacaciones por
+                        aburrimiento con Django, pensado para restaurantes, tiendas y supermercados. 
+                        Permite gestionar productos, inventario y ventas de forma sencilla y 
+                        eficiente.
+                    </p>
+                </div>
+            </article>
+
+            <article class="actividad">
+                <div class="actividad-imagen-container">
+                    <img src="/assets/images/persona2/img2.jpg" alt="Django" class="actividad-imagen" onclick="mostrarImagen(this)">
+                </div>
+                <div class="actividad-info">
+                    <h3>Aprendizaje de Django</h3>
+                    <p>
+                        Aprendí a usar Django para crear aplicaciones web con Python, 
+                        manejando modelos, vistas y templates. Configuré rutas, bases de datos 
+                        y panel de administración. Implementé formularios, autenticación de usuarios 
+                        y diseño con HTML/CSS. Con esto desarrole SOUTHERN POS
+                    </p>
+                </div>
+            </article>
+
+            <article class="actividad">
+                <div class="actividad-imagen-container">
+                    <img src="/assets/images/persona2/img3.jpg" alt="Videojuegos" class="actividad-imagen" onclick="mostrarImagen(this)">
+                </div>
+                <div class="actividad-info">
+                    <h3>Videojuegos</h3>
+                    <p>
+                        También jugué videojuegos por aburrimiento, aprovechando el tiempo libre para distraerme. 
+                        Pasé horas en títulos como Fortnite, varios juegos de Valve, Minecraft, Roblox y Black Ops 6. 
+                    </p>
+                </div>
+            </article>
+
+        </section>
+
+        <div id="visor" onclick="cerrarVisor(event)">
+            <img id="imagenGrande" src="" alt="Imagen grande">
+        </div>
+
+        <a href="../index.html">
+            <button class="btn-volver">Volver</button>
+        </a>
+    </main>
+
+<script src="../assets/js/persona2.js"></script>
+</body>
+</html>

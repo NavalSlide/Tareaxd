@@ -1,0 +1,50 @@
+   :root {
+    --primary: #1a1a2e;
+    --secondary: #16213e;
+    --accent: #ff6b6b;
+    --light: #e8f0fe;
+    --transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }  
+
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+        color: var(--accent);
+        text-transform: uppercase;
+        position: relative;
+        display: inline-block;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    }
+
+    h1::after {
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 5px;
+        background: linear-gradient(to right, var(--accent), #facc15);
+        border-radius: 5px;
+        transition: var(--transition);
+}
+
+    h1:hover::after {
+        width: 150px;
+    }
+
+    p{
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: var(--primary);
+        margin-bottom: 50px;
+        font-style: italic;
+        opacity: 0.9;
+    }
