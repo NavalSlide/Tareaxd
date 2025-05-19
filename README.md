@@ -12,23 +12,29 @@ Una página web interactiva y moderna que permite visualizar las experiencias va
 
 ## 📁 Estructura del proyecto
 
-├── index.html
-├── assets/
-│ ├── css/
-│ │ └── styles.css
-│ ├── js/
-│ │ └── app.js
-│ └── images/
-│ ├── persona1/
-│ ├── persona2/
-│ ├── persona3/
-│ └── persona4/
-├── pages/
-│ ├── persona1.html
-│ ├── persona2.html
-│ ├── persona3.html
-│ ├── persona4.html
-│ └── 404.html
+📁 vacaciones/
+├── 📄 index.html
+├── 📁 assets/
+│   ├── 📁 css/
+│   │   └── 📄 styles.css
+│   ├── 📁 js/
+│   │   └── 📄 app.js
+│   └── 📁 images/
+│       ├── 📁 persona1/
+│       │   └── Persona1.jpg
+│       ├── 📁 persona2/
+│       │   └── Persona2.png
+│       ├── 📁 persona3/
+│       │   └── persona3.jpeg
+│       └── 📁 persona4/
+│           └── image.jpeg
+├── 📁 pages/
+│   ├── 📄 persona1.html
+│   ├── 📄 persona2.html
+│   ├── 📄 persona3.html
+│   ├── 📄 persona4.html
+│   └── 📄 404.html
+
 
 
 ## 📸 Personas destacadas
@@ -44,5 +50,5 @@ Cada tarjeta lleva a una página dedicada con más detalles sobre la experiencia
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/vacaciones.git
+   git clone https://github.com/NavalSlide/Tareaxd
 
