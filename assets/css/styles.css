@@ -420,3 +420,38 @@
                 height: 3px;
             }
         }
+    .bubble-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* Asegura que las burbujas estén detrás de todo */
+        pointer-events: none; /* Evita que las burbujas interfieran con clics */
+        overflow: hidden;
+    }
+
+    .bubble {
+        position: absolute;
+        bottom: -100px; /* Comienzan desde abajo */
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.3), rgba(255, 107, 107, 0.1)); /* Color suave con tu --accent */
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 17, 255, 0.3);
+        opacity: 0.6;
+        animation: float linear infinite; /* Animación de flotación */
+        will-change: transform; /* Mejora el rendimiento */
+    }
+
+    @keyframes float {
+        0% {
+            transform: translateY(0) translateX(0);
+            opacity: 0.6;
+        }
+        50% {
+            opacity: 0.8;
+        }
+        100% {
+            transform: translateY(-100vh) translateX(calc(var(--sway) * 50px)); /* Mueve hacia arriba con un leve balanceo */
+            opacity: 0.2;
+        }
+    }
